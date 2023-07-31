@@ -1,0 +1,495 @@
+	<!DOCTYPE html>
+	<html lang="zxx">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="shortcut icon" href="img/icon.png">
+
+		<meta name="author" content="">
+		
+		<meta name="description" content="One of the most significant car rental company in the europe">
+		
+		<meta name="keywords" content="car, rental, rent, rents, bmw, mercedes, audi, land rover, mustang">
+		
+		<meta charset="UTF-8">
+		
+		<title>Car Rentals</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">			
+			<link rel="stylesheet" href="css/style.css">
+		</head>
+		<body>
+
+			  <header id="header" id="home">
+			    <div class="container">
+			    	<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				        <a href="index.html"><img src="img/logo.png" alt="logo sajta"/></a>
+				      </div>
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li><a href="index.html">Home</a></li>
+				          <li><a href="#cars">Cars</a></li>
+				          <li><a href="#team">Team</a></li>		
+						  <li><a href="#contact">Contact</a></li>	 
+						  <li><a href="#author">Author</a></li>	  
+						  <div id="closeMenu">  
+						  <i class="fa fa-times fatimes"></i>   
+						  </div>  
+						</ul>
+						<div class="burger">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</div>
+					  </nav>	
+					</div>
+			    </div>
+			  </header>
+
+
+			
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>	
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-center">
+						<div class="banner-content col-lg-7 col-md-6 ">
+							<h6 class="text-white ">the Royal Essence of Journey</h6>
+							<h1 class="text-white text-uppercase">
+								Best Journey Ever				
+							</h1>
+							<p class="pt-20 pb-20 text-white">
+								Rent a car here and go enjoy everywhere but near!
+							</p>
+							<a href="#team" class="primary-btn text-uppercase">Rent Car Now</a>
+						</div>
+						<div id="book" class="col-lg-5  col-md-6 header-right mt-5 mb-5">
+							<h4 class="text-white pb-30">Book Your Car Today!</h4>
+							<form id="firstForm" class="form" method="post" action="#" autocomplete="on">
+							    <div class="form-group">
+										<select id="selection" class="default-select form-control">
+											<option value="0" disabled selected hidden>Select Your Car</option>
+											<option value="1">BMW</option>
+											<option value="1">Mercedes</option>
+											<option value="1">Toyota</option>
+											<option value="1">Range Rover</option>
+											<option value="1">Volkswagen</option>
+											<option value="1">Jaguar</option>
+											<option value="1">Ford Mustang</option>
+											<option value="1">Dodge</option>
+										</select>
+										<p class="text-danger" id="sel-error"></p>
+							    </div>
+							    <div class="form-inline row">
+							        <div class="col-md-6 pb-2 wrap-left">
+											<label id="from-text">Pickup date :</label>
+							        </div>
+							        <div class="col-md-6 pt-1 wrap-right">
+										<div class="input-group dates-wrap">                                          
+											<input id="datepicker" class="dates form-control" id="exampleAmount" placeholder="Date & time" type="text">                        
+											<div class="input-group-prepend">
+												<span  class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
+											</div>											
+										</div>
+										<p class="text-danger" id="date-error"></p>
+									</div>
+									
+							    </div>
+							    <div class="form-inline row">
+							        <div class="col-md-6 pb-2 wrap-left">
+											<label id="from-text">Drop off date :</label>
+							        </div>
+							        <div class="col-md-6 pt-1 wrap-right">
+										<div class="input-group dates-wrap">                                              
+											<input id="datepicker2" class="dates form-control" id="exampleAmount" placeholder="Date & time" type="text">                        
+											<div class="input-group-prepend">
+												<span  class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
+											</div>											
+										</div>
+										<p class="text-danger" id="date-error2"></p>
+							        </div>
+							    </div>							    
+							    <div class="from-group">
+									<input class="form-control" id="name" type="text" name="name" placeholder="Your name">
+									<p class="text-danger" id="name-error"></p>
+									<input class="form-control" id="mail" type="email" name="email" placeholder="Email address">
+									<p class="text-danger" id="email-error"></p>
+									<input class="form-control" id="phone-number" type="tel" name="phone" placeholder="Phone number (06x/xxx-xxx)">
+									<p class="text-danger" id="phone-number-error"></p>
+							    </div>
+							    <div class="form-group row">
+							        <div class="col-md-12">
+							            <button type="submit" id="booker" class="btn btn-default btn-lg btn-block text-center text-uppercase">Confirm Car Booking</button>
+									</div>
+									<p class="mt-4 valid" id="good"></p>
+							    </div>
+							</form>
+						</div>											
+					</div>
+				</div>					
+			</section>
+			
+			<a href="#header" id="scrolled"></a>
+			
+			<section class="feature-area section-gap" id="service">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-8 pb-40 header-text">
+							<h1>Little bit more about us</h1>
+							<p>
+								Who are in extremely love with eco friendly system.
+							</p>
+						</div>
+					</div>
+					<div class="row" id="featurePrint">
+					</div>
+				</div>	
+			</section>
+				
+
+			
+			<section class="home-about-area" id="about">
+				<div class="container-fluid">				
+					
+				</div>	
+			</section>
+				
+
+			
+			<section class="model-area section-gap" id="cars">
+				<div class="container">
+					<div class="row d-flex justify-content-center pb-40">
+						<div class="col-md-8 pb-40 header-text">
+							<h1 class="text-center pb-10">These are most popular cars</h1>
+							<p class="text-center">
+								Choose your Desired Car Model.
+							</p>
+						</div>
+					</div>				
+					<div class="active-model-carusel slideshow-container">
+						<div class="row align-items-center single-model item mySlides fadeInto">
+							<div class="col-lg-6 model-right pr-60">
+								<img class="img-fluid" src="img/car.jpg" alt="">
+							</div>
+							<div class="col-lg-6 pl-60">
+								<div class="title justify-content-between d-flex">
+									<h4 class="mt-20">Audi 3000 msi</h4>
+									<h2>$100<span>/day</span></h2>
+								</div>
+								<p>
+									Audi 3000 msi is a briliant car for everyday use. As it is new car, we are not worried that you will enjoy it as much as rest of our car disposal.
+								</p>
+								<ul>
+									<li>Capacity         : 04 Person</li>
+									<li>Doors            : 04</li>
+									<li>Air Condition    : Dual Zone</li>
+									<li>Transmission     : Automatic</li>
+								</ul>
+								<a class="text-uppercase mt-2 primary-btn" href="#book">Book This Car Now</a>
+							</div>
+						</div>
+						<div class="row align-items-center single-model item mySlides fadeInto">
+							<div class="col-lg-6 model-right pr-60">
+								<img class="img-fluid" src="img/car2.jpg" alt="">
+							</div>
+							<div class="col-lg-6 pl-60">
+								<div class="title justify-content-between d-flex">
+									<h4 class="mt-20">Mustang GT-500</h4>
+									<h2>$150<span>/day</span></h2>
+								</div>
+								<p>
+									Mustang GT-500 is brand new car in 2019. We can tell you that it is more fun to drive it then GT-350. Mostly people rent this car for fun and not for everyday use. You can't blame them, right?
+								</p>
+								<ul>
+									<li>Capacity         : 04 Person</li>
+									<li>Doors            : 03</li>
+									<li>Air Condition    : Dual Zone</li>
+									<li>Transmission     : Automatic</li>
+								</ul>
+								<a class="text-uppercase primary-btn" href="#book">Book This Car Now</a>
+							</div>
+						</div>
+						<div class="row align-items-center single-model item mySlides fadeInto">
+							<div class="col-lg-6 model-right pr-60">
+								<img class="img-fluid" src="img/car3.jpg" alt="">
+							</div>
+							<div class="col-lg-6 pl-60">
+								<div class="title justify-content-between d-flex">
+									<h4 class="mt-20">BMW M5</h4>
+									<h2>$115<span>/day</span></h2>
+								</div>
+								<p>
+									BMW M5 is a practial and good looking car. It will most certainly drawn antetion.
+								</p>
+								<ul>
+									<li>Capacity         : 05 Person</li>
+									<li>Doors            : 04</li>
+									<li>Air Condition    : Dual Zone</li>
+									<li>Transmission     : Automatic</li>
+								</ul>
+								<a class="text-uppercase primary-btn" href="#book">Book This Car Now</a>
+							</div>
+						</div>	
+						<div class="row align-items-center single-model item mySlides fadeInto">
+							<div class="col-lg-6 model-right pr-60">
+								<img class="img-fluid" src="img/car4.jpg" alt="">
+							</div>
+							<div class="col-lg-6 pl-60">
+								<div class="title justify-content-between d-flex">
+									<h4 class="mt-20">Land Rover Ventor</h4>
+									<h2>$130<span>/day</span></h2>
+								</div>
+								<p>
+									The best luxury car we have in our disposal. Brand Land Rover edition will give you comfort but at the same time acceleration of a sport car. 
+								</p>
+								<ul>
+									<li>Capacity         : 07 Person</li>
+									<li>Doors            : 04</li>
+									<li>Air Condition    : Dual Zone</li>
+									<li>Transmission     : Automatic</li>
+								</ul>
+								<a class="text-uppercase primary-btn" href="#book">Book This Car Now</a>
+							</div>
+						</div>
+						<div class="row align-items-center single-model item mySlides fadeInto">
+							<div class="col-lg-6 model-right pr-60">
+								<img class="img-fluid" src="img/car5.jpg" alt="">
+							</div>
+							<div class="col-lg-6 pl-60">
+								<div class="title justify-content-between d-flex">
+									<h4 class="mt-20">Opel Insignia</h4>
+									<h2>$70<span>/day</span></h2>
+								</div>
+								<p>
+									Opel Insignia is classic car for everyday use. It is very efficient and it will serve its purpose.
+								</p>
+								<ul>
+									<li>Capacity         : 05 Person</li>
+									<li>Doors            : 04</li>
+									<li>Air Condition    : Dual Zone</li>
+									<li>Transmission     : Manual</li>
+								</ul>
+								<a class="text-uppercase primary-btn" href="#book">Book This Car Now</a>
+							</div>
+							
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						  
+
+					</div>
+
+					<div class="text-center justify-content-center mt-4">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+						<span class="dot" onclick="currentSlide(5)"></span>
+					</div>		
+				</div>	
+			</section>
+			
+
+			<section class="team-area section-gap team-page-teams" id="team">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Our Car Fleet</h1>
+							</div>
+						</div>
+					</div>	
+					<div class="row justify-content-around d-flex align-items-center mb-5" id="carFilter">
+						<button id="all" class="primary-btn text-uppercase">All</button>
+						<button id="sedan" class="primary-btn text-uppercase">Sedan</button>
+						<button id="coupe" class="primary-btn text-uppercase">Coupe</button>
+						<button id="suv" class="primary-btn text-uppercase">Suv</button>
+						<button id="pickup" class="primary-btn text-uppercase">Pickup</button>
+						<button id="convertible" class="primary-btn text-uppercase">Convertible</button>
+					</div>			
+					<div class="row justify-content-center d-flex align-items-center" id="carPrint">
+						<!--Ispisi ovde-->
+					</div>
+				</div>	
+			</section>
+
+			
+			<section class="facts-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col single-fact">
+							<h1 id="projects">2536</h1>
+							<p>Projects Completed</p>
+						</div>
+						<div class="col single-fact">
+							<h1 id="clients">6784</h1>
+							<p>Really Happy Clients</p>
+						</div>
+						<div class="col single-fact">
+							<h1 id="numberCars">2239</h1>
+							<p>Total number of our cars</p>
+						</div>	
+						<div class="col single-fact">
+							<h1>435</h1>
+							<p>Professional Drivers</p>
+						</div>												
+					</div>
+				</div>	
+			</section>
+									
+			
+			
+
+			
+			<section id="author" class="callaction-area relative section-gap">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-10">
+							<h1 class="text-white">Little bit about author</h1>
+
+							<div class="row align-items-center mt-4 mb-5">
+								<div class="col-lg-6 model-right pr-60">
+									<img class="img-fluid" src="img/author.JPG" alt="">
+								</div>
+								<div class="col-lg-6">
+
+										<h4 class="text-yellow">Hey! My name is Uglješa Đorđević.</h4>
+
+										<p>
+											Index number: 249/18<br>
+											Date of birth: 08.07.1999
+										</p>
+
+									<p id="textAbout">
+										I am a second year student at Visoka škola strukovnih studija za informacione i komunikacione tehnologije" in Belgrade. This presents school project. So far I have studied Web Design and this my first time confronting Web Programing.
+									</p>
+									<input type="button" id="tBtn" class="mt-4 text-uppercase primary-btn" value="Read more" />
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			
+
+			<section class="contact-page-area section-gap" id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
+						<div class="col-lg-4 d-flex flex-column address-wrap">
+							<div class="single-contact-address d-flex flex-row">
+								<div class="icon">
+									<span class="lnr lnr-home"></span>
+								</div>
+								<div class="contact-details">
+									<h5>Pančevo, Serbia</h5>
+									<p>Žarka Zrenjanina 99b</p>
+								</div>
+							</div>
+							<div class="single-contact-address d-flex flex-row">
+								<div class="icon">
+									<span class="lnr lnr-phone-handset"></span>
+								</div>
+								<div class="contact-details">
+									<h5>00 (880) 9865 562</h5>
+									<p>Mon to Fri 9am to 6 pm</p>
+								</div>
+							</div>
+							<div class="single-contact-address d-flex flex-row">
+								<div class="icon">
+									<span class="lnr lnr-envelope"></span>
+								</div>
+								<div class="contact-details">
+									<h5>support@carrental.com</h5>
+									<p>Send us your query anytime!</p>
+								</div>
+							</div>														
+						</div>
+						<div class="col-lg-8">
+							<form class="form-area " autocomplete="on" action="#" method="post" class="contact-form text-right">
+								<div class="row">	
+									<div class="col-lg-6 form-group">
+										<input id="namec" class="form-control"  name="name" placeholder="Enter your name" type="text">
+										<p class="text-danger" id="name-error1"></p>
+										<input id="mailc" class="form-control" name="email" placeholder="Enter email address" type="email">
+										<p class="text-danger" id="email-error1"></p>
+										<input id="subc" class="form-control" name="subject" placeholder="Enter your subject" type="text">
+										<p class="text-danger" id="sub-error"></p>
+										<div class="mt-20 alert-msg" style="text-align: left;"></div>
+									</div>
+									<div class="col-lg-6 form-group">
+										<textarea class="common-textarea form-control" name="message" placeholder="Message" ></textarea>
+										<button type="submit" id="contactBtn" class="primary-btn mt-20 text-white" style="float: right;">Send Message</button>
+																				
+									</div>
+								</div>
+							</form>	
+						</div>
+					</div>
+				</div>	
+			</section>
+
+				
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-2 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Documentation</h6>
+								<ul>
+									<li><i class="fa fa-book mr-1"></i><a href="Dokumentacija.pdf" target="_blank">Documentation</a></li>
+									<li><i class="fa fa-sitemap mr-1"></i><a href="sitemap.xml" target="_blank">Sitemap</a></li>
+								</ul>								
+							</div>
+						</div>												
+						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+							<div class="single-footer-widget">
+								<h6>Follow Us</h6>
+								<div class="footer-social d-flex align-items-center">
+									<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+									<a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+									<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>							
+						<div class="col-lg-4  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Newsletter</h6>
+								<p>Stay updated with our latest news</p>
+								<div class="" id="mc_embed_signup">
+									<form target="_blank" novalidate="true" action="#" method="get" class="form-inline">
+										<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+			                            	<button class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span></button>
+			                            	<div style="position: absolute; left: -5000px;">
+												<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+											</div>
+
+										<div class="info"></div>
+									</form>
+								</div>
+							</div>
+						</div>	
+						<p class="mt-50 mx-auto footer-text col-lg-12">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Uglješa Đorđević | Made as a school project</p>											
+					</div>
+				</div>
+			</footer>	
+					
+
+
+			<script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA&callback=initMap"></script>
+			
+			<script type="text/javascript" src="js/main.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script type="text/javascript" src="js/jquery.js"></script>
+		</body>
+	</html>
+
+
+

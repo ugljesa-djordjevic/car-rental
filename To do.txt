@@ -1,0 +1,9 @@
+-Make slider better and bigger
+-If user clicks on available car it goes to form on top and puts in that car, if user clicks car that is not available it pops window that tells him that this action is not possible
+-Make feature dinamic*
+-"Globaly connected" ispisi dinamicki*
+-Add animations and dinamic listing where you can
+*Documentation*
+
+
+

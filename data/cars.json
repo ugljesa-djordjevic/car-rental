@@ -1,0 +1,81 @@
+[
+    {
+        "src" : "img/b1.png",
+        "style" : "valid",
+        "status" : "Available",
+        "car" : "JAGUAR XE",
+        "desc" : "Sedan (LCAR)"
+    },
+
+    {
+        "src" : "img/b2.png",
+        "style" : "error",
+        "status" : "Not Available",
+        "car" : "MERCEDES BENZ GLC",
+        "desc" : "SUV (LFAR)"
+    },
+
+    {
+        "src" : "img/b3.png",
+        "style" : "valid",
+        "status" : "Available",
+        "car" : "MERCEDES BENZ CLA",
+        "desc" : "Sedan (PCAR)"
+    },
+
+    {
+        "src" : "img/b4.png",
+        "style" : "valid",
+        "status" : "Available",
+        "car" : "DODGE RAM 1500 CREW CAB",
+        "desc" : "Pickup (PPAR)"
+    },
+
+    {
+        "src" : "img/b5.png",
+        "style" : "valid",
+        "status" : "Available",
+        "car" : "VOLKSWAGEN JETTA",
+        "desc" : "Sedan (SCAR)"
+    },
+
+    {
+        "src" : "img/b6.png",
+        "style" : "error",
+        "status" : "Not Available",
+        "car" : "FORD MUSTANG",
+        "desc" : "Convertible (STAR)"
+    },
+
+    {
+        "src" : "img/b7.png",
+        "style" : "error",
+        "status" : "Not Available",
+        "car" : "MERCEDES BENZ E-CLASS",
+        "desc" : "Sedan (XCAR)"
+    },
+
+    {
+        "src" : "img/b8.png",
+        "style" : "valid",
+        "status" : "Available",
+        "car" : "BMW 7 SERIES",
+        "desc" : "Sedan (XDAR)"
+    },
+
+    {
+        "src" : "img/b9.png",
+        "style" : "valid",
+        "status" : "Available",
+        "car" : "RANGE ROVER VELAR",
+        "desc" : "SUV (XFAR)"
+    },
+
+    {
+        "src" : "img/b10.png",
+        "style" : "valid",
+        "status" : "Available",
+        "car" : "FORD MUSTANG SHELBY GT",
+        "desc" : "Coupe (XSAJ)"
+    }
+]
